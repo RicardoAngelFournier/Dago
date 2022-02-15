@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Calculadora</title>
+  <meta name="description" content="A simple HTML5 Template for new projects.">
+  <meta name="author" content="SitePoint">
+        <script>
+            function suma(){
+                let n1,n2,n3,suma,respuesta;
+                n1 = document.getElementById('numero1').value;
+                n2 = document.getElementById('numero2').value;
+                n3 = document.getElementById('numero3').value;
+
+                suma=parseInt(n1)+parseInt(n2)+parseInt(n3);
+                respuesta = getElementById('resultado');
+
+                respuesta.innerHTML=`
+                <h3>
+                    $ </h3>
+
+                `;
+                
+            }
+        </script>
+</head>
+
+<body>
+    <h1>**Calculadora**</h1>
+    <hr>
+    <label for "numero1"> Numero 1: </label>
+    <input type="text" id="numero1"> 
+    <br>
+    <label for "numero2"> Numero 2: </label>
+    <input type="text" id="numero2"> 
+    <br>
+    <label for "numero3"> Numero 3: </label>
+    <input type="text" id="numero3"> 
+    <br>
+    <button type="button" onclick="suma()"> Calcular </button>
+    <p id="resultado"> </p>
+</body>
+</html>
